@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <title>Frontend Test</title>
+  </head>
+  <body>
+    <header class="main-header vertical-margin flex-center">
+      <img src="./resources/logo.png" alt="logo" class="logo" />
+      <h1 class="headline">
+        ¡Nuevo servicio! <br />
+        Encárgate de tu negocio, nosotros de tu contabilidad
+      </h1>
+    </header>
+    <main class="vertical-margin">
+      <section id="introduction-cards" class="slider"></section>
+      <section class="functionalities">
+        <iframe
+          class="functionalities-video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/qhJg9BDOh0M?controls=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <div class="benefits">
+          <h2><strong>Beneficios</strong></h2>
+          <ul>
+            <li>
+              <h3>Automático</h3>
+              <p>
+                Ahorra tiempo al eliminar la tarea de enviar Facturas a tu
+                contador ¡El proceso es automático!
+              </p>
+            </li>
+            <li>
+              <h3>Servicio Oportuno</h3>
+              <p>Comunicación mas fácil y efectiva con tu contador personal.</p>
+            </li>
+            <li>
+              <h3>Simplicidad</h3>
+              <p>Información contable en tiempo real</p>
+            </li>
+            <li>
+              <h3>Confiable</h3>
+              <p>
+                Cálculos hechos por uno de nuestros contadores expertos asignado
+                especialmente a tu negocio
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="steps" class="grid-rows"></section>
+      <dialog class="modal"></dialog>
+    </main>
+    <footer class="vertical-margin">
+      <h2 class="headline">
+        ¿Quieres cambiar a tu Conta? Nosotros nos encargamos de llevar a cabo la
+        transición de toda tu contabilidad hasta el día de hoy
+      </h2>
+      <section class="actions">
+        <button id="see-packages" class="action-button">Ver Paquetes</button>
+        <button class="action-button schedule-meeting">
+          Agenda una cita con un contador experto
+        </button>
+      </section>
+    </footer>
+    <div id="modal-background"></div>
+    <dialog id="packages" class="modal-content grid-rows"></dialog>
+    <script defer src="main.js"></script>
+  </body>
+</html>

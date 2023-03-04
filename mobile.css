@@ -1,0 +1,151 @@
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 16px;
+  }
+
+  .actions {
+    flex-wrap: wrap;
+  }
+
+  .action-button {
+    font-size: 0.75em;
+  }
+
+  .slider {
+    display: flex !important;
+    align-items: center;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .slide {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    transform-origin: center center;
+    position: relative;
+    width: 50%;
+    height: 70%;
+  }
+
+  .functionalities {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .functionalities-video {
+    width: 70vw;
+    height: 250px;
+  }
+
+  .grid-rows {
+    grid-auto-flow: row !important;
+    grid-auto-rows: 1fr;
+    max-width: fit-content;
+  }
+
+  .step {
+    width: 30%;
+    padding: 1rem;
+  }
+
+  #modal-background {
+    width: 100svw;
+  }
+
+  .modal-content {
+    grid-template-columns: unset;
+    position: fixed;
+    overflow-y: scroll;
+    width: 95%;
+    height: 50%;
+    border-radius: 15px 15px 0 0;
+    padding: 0;
+    justify-items: center;
+    transform: translateY(150%);
+    transition: transform 0.5s ease;
+  }
+
+  .show-in {
+    transform: translateY(50%);
+  }
+
+  .modal-toolbar {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    z-index: 4;
+  }
+
+  .confirm-plan {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--secondary--blue);
+    color: white;
+    z-index: 4;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 40px;
+  }
+
+  .toolbar-title {
+    position: relative;
+    font-size: 1rem;
+    font-weight: normal;
+    left: 5%;
+  }
+
+  #close-modal {
+    position: relative;
+    right: 5%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1;
+    width: 2rem;
+    height: 2rem;
+    background-color: #aaaaaa;
+    color: black;
+    border-radius: 50%;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  #close-modal:hover,
+  #close-modal:focus {
+    color: #1d1d1d;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-card {
+    padding: 2rem;
+    width: 75%;
+    height: 60%;
+  }
+
+  .modal-card:focus {
+    border: 1px solid darkcyan;
+  }
+
+  .plan {
+    font-size: 0.75rem;
+  }
+
+  .plan-cost {
+    font-size: 1.5rem;
+  }
+
+  .call-to-action {
+    display: none;
+  }
+}
