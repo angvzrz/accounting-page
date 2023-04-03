@@ -1,7 +1,11 @@
-module.exports = {
+import { defineConfig } from 'vite';
+
+export default defineConfig({
   build: {
+    outDir: 'dist',
+    assetsDir: 'resources',
     rollupOptions: {
-      input: "index.html",
+      main: 'index.html',
     },
   },
-};
+});
