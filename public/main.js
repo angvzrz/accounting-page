@@ -189,19 +189,19 @@ async function hideModal(background, modal) {
 
 function createAndAppendCards() {
   const calculatorCard = introductionCard(
-    './resources/icons/budget.png',
+    '/resources/icons/budget.png',
     'Hacemos tu contabilidad mensual'
   );
   const percentageCard = introductionCard(
-    './resources/icons/percentage.png',
+    '/resources/icons/percentage.png',
     'Calculamos tus impuestos'
   );
   const documentCard = introductionCard(
-    './resources/icons/document.png',
+    '/resources/icons/document.png',
     'Presentamos tus declaraciones SAT'
   );
   const dollarCoinCard = introductionCard(
-    './resources/icons/dollar-coin.png',
+    '/resources/icons/dollar-coin.png',
     'Calculo, timbrado y envío de nómina'
   );
 
@@ -212,14 +212,14 @@ function createAndAppendCards() {
   introductionCardsSection.append(documentCard);
   introductionCardsSection.append(dollarCoinCard);
 
-  const step1 = initialStep('./resources/icons/edit.png', 'Agrega tu FIEL', 1);
+  const step1 = initialStep('/resources/icons/edit.png', 'Agrega tu FIEL', 1);
   const step2 = initialStep(
-    './resources/icons/sync.png',
+    '/resources/icons/sync.png',
     'Sincroniza tus cuentas bancarias',
     2
   );
   const step3 = initialStep(
-    './resources/icons/file-download.png',
+    '/resources/icons/file-download.png',
     'Recibe mensualmente tu declaración de impuestos',
     3
   );
