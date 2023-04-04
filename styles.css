@@ -110,7 +110,7 @@ main {
 }
 
 .benefits ul {
-  list-style-image: url('resources/icons/check.png');
+  list-style-image: url('/resources/icons/check.png');
 }
 
 #steps {
